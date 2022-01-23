@@ -23,14 +23,14 @@ cout.tie(NULL);
     while (j<v.size())
     {
         sum+=v[j];
-        if(j-i+1<k)        // If the current window size is less than the required window size.
+        if(j-p+1<k)        // If the current window size is less than the required window size.
         j++;
 
-        else if(j-i+1==k)
+        else if(j-p+1==k)
         {
             mx=max(mx,sum);
-            sum=sum-v[i];
-            i++;
+            sum=sum-v[p];
+            p++;
             j++;
         }
     }
