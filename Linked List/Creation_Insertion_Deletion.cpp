@@ -80,6 +80,7 @@ void Deletion(struct Node* head, int pos)
     }
 }
 
+
 int main()
 {
 ios_base::sync_with_stdio(false);
